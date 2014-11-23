@@ -1,37 +1,13 @@
-markdown: kramdown
-#pygments: true
-safe: false
-permalink: /posts/:title.html
-exclude:
-  - README.md
+markdown: redcarpet
+highlighter: null
+permalink: /:title
 
-name: Niu Zhuang
-#host: NiuZhuang.github.io
-desc: 仙人抚我顶，结发受长生 
-highlighter: rouge
+url:
+baseurl:
 
-custom:
-    category:
-        default: Default Category
-        another: Another Category
-    categories:
-      - name:  default
-        title: Default Category
+redcarpet:
+  extensions: [strikethrough, tables]
 
-      - name:  another
-        title: Another Category
-
-    scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
-
-meta:
-    author:
-        name: Niu Zhuang
-        email: 804150511@qq.com
-        #disqus: your-disqus-short-name              # Disqus缩略标识
-        #gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
-        github: NiuZhuang                 # GitHub账号
-        #gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar头像标识
-
-    #disqus: disqus.com/embed.js                     # Disqus评论的JS地址
-    #gapi: http://www.google.com/jsapi               # Google API地址
-    #gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
+sass:
+  sass_dir: public/css
+  style: :compressed
