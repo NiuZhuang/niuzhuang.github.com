@@ -1,12 +1,11 @@
 ---
 layout: post
-title: 修改cmd默认字体为consolas
-category: default
+title: Change default font of cmd.exe to consolas
 ---
 
-将下面代码存为.reg格式，双击执行，就可以修改字体。
+Save below text as .reg file and double click it. Then the font get changed.
 
-{code}
+```
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]
 "WindowSize"=dword:00170058
@@ -17,6 +16,6 @@ Windows Registry Editor Version 5.00
 "FontWeight"=dword:00000190
 "FaceName"="Consolas"
 "FontFamily"=dword:00000036
-{code}
+```
 
 
